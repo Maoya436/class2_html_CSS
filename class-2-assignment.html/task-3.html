@@ -1,0 +1,62 @@
+<!DOCTYPe html>
+<html>
+<div class="grid">
+    <div>
+        <h3>Card-1</h3>
+        <p>this is my first page.this code should be correct.
+
+        </p>
+    </div>
+    <div>
+        <h3>Card-2</h3>
+        <p>this is a trial page.this code should be correct.</p>
+    </div>
+    <div>
+        <h3>Card-3</h3>
+        <p>it's an assignment. this code should be correct.</p>
+    </div>
+    <div>
+        <p>adding an image</p>
+        <img src="https://img.freepik.com/free-photo/cosmos-flowers_1373-83.jpg" alt="demo">
+    </div>
+
+</div>
+
+
+</html>
+<style>
+    .grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+
+    }
+
+    .grid div {
+        background: lightyellow;
+        padding: 20px;
+        text-align: center;
+    }
+
+    @media(max-width:600px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
